@@ -1,0 +1,53 @@
+//mixins less的混合是扩展了class
+.font{
+	font-size:12px;
+	font-family:'微软雅黑';
+}
+
+html{
+	.font;
+}
+
+//带参数的混合
+//设置默认值@direction：'默认数值'
+.fl(@direction:none){
+	float:@direction;
+}
+
+.menu{
+	.fl(left);
+	.background(cyan,'./jay.jpg',no-repeat);
+}
+
+//多参数的混合
+.background(@color:none,@url:none,@repeat:none,@size:auto){
+	background-color:@color;
+	background-url:@url;
+	background-repeat:@repeat;
+	background-size:@size;
+}
+
+//@arguments变量
+
+.border(@h,@type,@color){
+	border:@arguments;
+}
+
+.log{
+	.border(1px,solid,red);
+}
+
+//@rest变量
+.mixin (@a, @rest...) {
+    // @rest 表示 @a 之后的参数
+    // @arguments 表示所有参数
+}
+
+//	!important 关键字
+
+.all(@size){
+	font-size:@size !important;
+}
+body{
+	.all(14px)
+}

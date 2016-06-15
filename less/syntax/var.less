@@ -1,0 +1,19 @@
+//变量的声明关键字是@符号
+
+//声明变量
+@bg-color:#ccc;
+body{
+	background:@bg-color;
+}
+//变量的解析按需加载（lazy-loaded），以当前作用域的最后一次赋值为准，引用不区分前后顺序。以最后一次赋值为准
+header{
+	@bg-color:cyan;
+	background:@bg-color;
+	font-size:@@font;
+}
+@bg-color:#333;
+
+//变量可以重复解析
+
+@font:'font-size';
+@font-size:'12px';

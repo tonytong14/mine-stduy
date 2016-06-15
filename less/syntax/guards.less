@@ -1,0 +1,42 @@
+//@switch
+.mixins(400,@value){
+	font-weight:@value;
+}
+
+.mixins(800,@value){
+	font-weight:@value;
+}
+
+.menu{
+	//定义判断条件的值
+	@switch:400;
+	.mixins(@switch,800);
+}
+
+
+//匹配表达式
+.font-size (@size) when(@size =< 12){
+	font-size:@size;
+}
+
+@media: mobile;
+
+.mixin (@a) when (@media = mobile) { }
+.mixin (@a) when (@media = desktop) { }
+
+//not否定条件,取反
+.not (@a) when not (isnumber(@a)){
+	position:absolute;
+}
+.menu{
+	.not(ting);
+}
+
+//and 并且条件
+
+.and (@a) when (isnumber(@a)) and (@a > 10) {
+	left:@a px;
+}
+.menu{
+	.and(20);
+}

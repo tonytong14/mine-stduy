@@ -1,0 +1,44 @@
+/*--
+import 引入
+导入文件提到文件最前面@charset 'utf-8'之后
+被导入的LESS文件会被复制到含导入语句的文件中，然后一起编译。导入和被导入的文件共享所有的混合、命名空间、变量以及其它结构
+less 文件不强制导入顶部可以导入进作用域中
+--*/
+@charset 'utf-8';
+body {
+  background: #333333;
+}
+header {
+  background: #00ffff;
+  font-size: '12px';
+}
+.font {
+  font-size: 12px;
+  font-family: '微软雅黑';
+}
+html {
+  font-size: 12px;
+  font-family: '微软雅黑';
+}
+.menu {
+  float: left;
+  background-color: #00ffff;
+  background-url: './jay.jpg';
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.log {
+  border: 1px solid #ff0000;
+}
+body {
+  font-size: 14px !important;
+}
+.menu {
+  font-weight: 800;
+}
+.menu {
+  position: absolute;
+}
+.menu {
+  left: 20 px;
+}
