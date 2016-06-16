@@ -1,0 +1,25 @@
+//命名空间
+#public{
+	.bt{
+		border: 1px solid red;
+		border-radius:5px;
+	}
+
+}
+
+#header{
+	#public > .bt ;
+}
+
+//运算
+@base: 5%;
+@filler: (@base * 2);
+@other: (@base + @filler);
+
+.oper{
+	color: (#888 / 4);
+	background-color: (@base + #111);
+	height: (100% / 2 + @filler);
+}
+
+//函数见函数手册.......
