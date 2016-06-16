@@ -1,0 +1,33 @@
+//嵌套规则
+
+//层级嵌套
+header{color:#ccc;
+	.log{
+		font-size:50px;
+	}
+	.nav{
+		font-size:14px;
+		background:red;
+	}
+}
+
+//&关键字表示上一级元素
+
+.header{color:cyan;
+	.log{
+		font-size:50px;
+	}
+	.nav{
+		&:hover{background:#256789}
+	}
+}
+
+//&的高级用法，反转嵌套关系。
+.child, .sibling {
+    .parent & {
+        color: black;
+    }
+    & + & {
+        color: red;
+    }
+}
