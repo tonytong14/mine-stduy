@@ -1,1 +1,11 @@
-webapi..
+客户端和服务端的交互（通讯）
+
+1.纯http协议作通讯
+
+
+
+2.webservice通讯
+
+
+3.webapi通讯
+	参考学习地址：http://www.cxyclub.cn/n/25123/
