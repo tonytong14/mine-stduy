@@ -32,3 +32,4 @@ function log(m) {
 }
 var user = new Star('黄晓明', '男', '1.5米');
 document.body.innerHTML = log(user);
+//# sourceMappingURL=compile.js.map
