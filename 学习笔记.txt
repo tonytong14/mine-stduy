@@ -1,3 +1,6 @@
 //git 常用命令
 http://www.jb51.net/article/55442.htm
 http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/
+
+//jquery源码解析
+http://www.cnblogs.com/aaronjs/p/3279314.html
