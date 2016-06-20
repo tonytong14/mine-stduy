@@ -1,4 +1,7 @@
-li{  width:100%;background-size: cover;list-style:none }
-.one{background:url('../img/one.jpg') no-repeat}
-.two{background:url('../img/two.jpg') no-repeat}
-.three{background:url('../img/three.jpg') no-repeat}
+*{margin:0;padding:0;}
+.container{width:100%}
+ul{width:100%}
+li{  width:100%;list-style:none;display: block }
+.one{background:url('../img/one.jpg') no-repeat;background-size:cover;}
+.two{background:url('../img/two.jpg') no-repeat;background-size:cover;}
+.three{background:url('../img/three.jpg') no-repeat;background-size:cover;}
