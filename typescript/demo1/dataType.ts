@@ -30,6 +30,14 @@ function  VoidSting():string {
     return '10';
 }
 
-function other():any{
-    
+function other():void{
 }
+
+//元组 tuple 数据类型
+let x:[string,number];
+x=['test',3656]
+x[0].substr(1);
+/*x[1].substr(1);*/
+x[2].toString();
+/*x[3]=true;*/
+//元组类型允许表示一个已知元素数量和类型的数组，各元素的类型不必相同。当访问一个越界的元素，会使用联合类型替代：
