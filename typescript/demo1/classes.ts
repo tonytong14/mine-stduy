@@ -47,10 +47,14 @@ var rain=new SuperStar(250);
 rain.song('我不知道');
 rain.say();
 
-//访问修饰符
+//访问修饰符 public private protected
 class People{
     public name:string;
     private age:any;
+    protected height:number;
+    constructor(h:number){
+        this.height=h;
+    }
     print(){
         return this.name +'----'+ this.age ;
     }
@@ -58,19 +62,23 @@ class People{
 
 class Man extends People{
     school:string;
+    constructor(s:string){
+        super(173);
+        this.school=s;
+    }
     print(){
         return this.name  +'---'+this.school;
     }
 }
 
-var m=new Man();
+var m=new Man('yp');
 m.name='wyf';
 m.school='erxuexiao';
 alert(m.print());
 
 //封装的实现
-/*
-class Hello{
+
+/*class Hello{
     private _name:string;
     tell(){
         return this.name ;
@@ -82,3 +90,5 @@ class Hello{
          this._name=newname;
     }
 }*/
+
+//static

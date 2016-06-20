@@ -18,7 +18,7 @@ var Person = (function () {
         return this.name + '------' + this.age;
     };
     return Person;
-}());
+})();
 var ren = new Person('meiss', 19);
 alert(ren.print());
 //类的继承
@@ -33,7 +33,7 @@ var Star = (function () {
         console.log(this.name + '--' + this.age + ming);
     };
     return Star;
-}());
+})();
 var SuperStar = (function (_super) {
     __extends(SuperStar, _super);
     function SuperStar(money) {
@@ -44,36 +44,37 @@ var SuperStar = (function (_super) {
         console.log(this.name + '---' + this.age + '--' + this.money);
     };
     return SuperStar;
-}(Star));
+})(Star);
 var rain = new SuperStar(250);
 rain.song('我不知道');
 rain.say();
-//访问修饰符
+//访问修饰符 public private protected
 var People = (function () {
-    function People() {
+    function People(h) {
+        this.height = h;
     }
     People.prototype.print = function () {
         return this.name + '----' + this.age;
     };
     return People;
-}());
+})();
 var Man = (function (_super) {
     __extends(Man, _super);
-    function Man() {
-        _super.apply(this, arguments);
+    function Man(s) {
+        _super.call(this, 173);
+        this.school = s;
     }
     Man.prototype.print = function () {
         return this.name + '---' + this.school;
     };
     return Man;
-}(People));
-var m = new Man();
+})(People);
+var m = new Man('yp');
 m.name = 'wyf';
 m.school = 'erxuexiao';
 alert(m.print());
 //封装的实现
-/*
-class Hello{
+/*class Hello{
     private _name:string;
     tell(){
         return this.name ;
@@ -85,4 +86,5 @@ class Hello{
          this._name=newname;
     }
 }*/
+//static 
 //# sourceMappingURL=classes.js.map
