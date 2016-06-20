@@ -26,7 +26,7 @@ var Star = (function () {
         this.info = name + '<br/>' + sex + '<br/>' + height;
     }
     return Star;
-}());
+})();
 function log(m) {
     return m.name + m.sex;
 }

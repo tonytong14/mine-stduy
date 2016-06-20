@@ -19,10 +19,16 @@ table {
 }
 body{font-size:14px}
 
-//ÉèÖÃ³£ÓÃ±äÁ¿¼°¹«ÓÃÀà
+//ï¿½ï¿½ï¿½Ã³ï¿½ï¿½Ã±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 
-//css3ÊôÐÔ¼æÈÝÀà
+//css3ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½
+.opacity(@opacity) {
+	opacity: @opacity;
+	// IE8 filter
+	@opacity-ie: (@opacity * 100);
+	filter: ~"alpha(opacity=@{opacity-ie})";
+}
 .border-radius(@value:0){
 	border-radius:@value;	
 }
@@ -33,7 +39,7 @@ body{font-size:14px}
 	box-shadow:@value;
 }
 .box-shadow-ie(@value){
-	/*ie ¼æÈÝ*/
+	/*ie ï¿½ï¿½ï¿½ï¿½*/
 	background-size:cover
 }
 .opacity(@value:1){
