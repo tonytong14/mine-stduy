@@ -4,3 +4,6 @@ http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b0
 
 //jquery源码解析
 http://www.cnblogs.com/aaronjs/p/3279314.html
+
+//js 在线手册
+http://www.w3school.com.cn/js/pro_js_inheritance_implementing.asp
