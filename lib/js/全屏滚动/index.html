@@ -17,8 +17,13 @@
     <script src="js/roll.js"></script>
     <script>
         var date=new Date();
+        console.log(date.getSeconds());
+        date.setSeconds(date.getSeconds() + 2);
+        console.log(date.getSeconds());
+        console.log(date.toLocaleString());
         console.log(date.toUTCString());
-        document.cookie='user=123p676;expires='+date.toUTCString()+'';
+        console.log(date.toGMTString());
+        document.cookie='user=123p676;expires='+date.toGMTString()+'';
     </script>
 </body>
 </html>
