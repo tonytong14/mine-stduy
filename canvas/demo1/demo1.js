@@ -40,8 +40,8 @@ function taiJi(deg){
         can.fillStyle='#000';
         can.arc(350,300,50,(Math.PI * 0)/180,(Math.PI *180)/180,true);
         can.fill();
-        can.translate(300,300);
-        can.rotate(deg);
+        //can.translate(300,300);
+        //can.rotate(deg);
     }
 }
 
