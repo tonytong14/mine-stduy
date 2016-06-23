@@ -57,4 +57,27 @@ Tom . on ( 'sayHi' , function ( someone ) {
 
 } )
 
-Tom . emit ( 'sayHi' , 'jerry' )
+Tom . emit ( 'sayHi' , 'jerry' );
+
+//原型链继承
+var eventEmitter = new events.EventEmitter();
+console.log(events.init);
+function Y(){
+
+}
+Y.prototype=eventEmitter;
+
+var yuan=new Y();
+yuan.on('test',function(){
+    console.log('原型链继承');
+});
+
+yuan.emit('test');
+
+var test={};
+test.prototype=eventEmitter;
+var t=test.prototype;
+t.on('call',function(){
+    console.log(546767);
+});
+t.emit('call');
