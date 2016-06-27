@@ -1,0 +1,6 @@
+1：苹果手机电话号码显示问题
+    加入苹果特有的
+    <meta name="format-detection" content="telephone=no">
+2：ios webApp全屏问题
+    苹果公司私有的meta标签，可以使web应用在全屏模式下运行，否则将用safari浏览器展示其内容
+    <meta name="apple-mobile-web-app-capable" content="yes">
