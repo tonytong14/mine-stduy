@@ -1,0 +1,4 @@
+1;浏览器地址栏设置颜色
+    <meta name="theme-color" content="#2932e1">
+2：禁止网页转码
+    <meta http-equiv="Cache-Control" content="no-siteapp" />

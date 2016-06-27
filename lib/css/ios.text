@@ -3,4 +3,29 @@
     <meta name="format-detection" content="telephone=no">
 2：ios webApp全屏问题
     苹果公司私有的meta标签，可以使web应用在全屏模式下运行，否则将用safari浏览器展示其内容
+    用户将网页收藏为书并加入到主画面时，可以令最下的选单消失，令网页为全屏幕
     <meta name="apple-mobile-web-app-capable" content="yes">
+    iphone的私有标签，它指定的iphone中safari顶端的状态条的样式
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+3：ios input默认样式问题
+    sarfari 使用webkit内核，是用-webkit-appearance:none;
+        input[type="text"],input[type="password"]{
+            -webkit-appearance:none;
+            appearance:none;
+            outline:none;
+            -webkit-tap-highlight-color:rgba(0,0,0,0);
+            border-radius:0;
+        }
+        input, button, textarea {
+            border: 0;
+            border-radius: 0;
+            background: transparent;
+            -webkit-appearance: none;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+    placeholder样式问题
+    ::-webkit-input-placeholder{color:#999;}
+
+ 4：设置状态栏背景颜色
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />

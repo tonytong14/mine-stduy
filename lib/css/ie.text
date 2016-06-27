@@ -1,2 +1,59 @@
 1:透明度ie的兼容
 filter: ~"alpha(opacity*100)";
+2：hack
+    /* CSS属性级Hack */
+
+    color:red; /* 所有浏览器可识别*/
+
+    _color:red; /* 仅IE6 识别 */
+
+    *color:red; /* IE6、IE7 识别 */
+
+    +color:red; /* IE6、IE7 识别 */
+
+    *+color:red; /* IE6、IE7 识别 */
+
+    [color:red; /* IE6、IE7 识别 */
+
+    color:red\9; /* IE6、IE7、IE8、IE9 识别 */
+
+    color:red\0; /* IE8、IE9 识别*/
+
+    color:red\9\0; /* 仅IE9识别 */
+
+    color:red \0; /* 仅IE9识别 */
+
+    color:red!important; /* IE6 不识别!important 有危险*/
+
+    /* CSS选择符级Hack */
+
+    *html #demo { color:red;} /* 仅IE6 识别 */
+
+    *+html #demo { color:red;} /* 仅IE7 识别 */
+
+    body:nth-of-type(1) #demo { color:red;} /* IE9+、FF3.5+、Chrome、Safari、Opera 可以识别 */
+
+    head:first-child+body #demo { color:red; } /* IE7+、FF、Chrome、Safari、Opera 可以识别 */
+
+    :root #demo { color:red\9; } : /* 仅IE9识别 */
+
+    /* IE条件注释Hack */
+
+    <!--[if IE 6]>此处内容只有IE6.0可见<![endif]-->
+
+    <!--[if IE 7]>此处内容只有IE7.0可见<![endif]-->
+
+3：兼容模式
+    各种兼容模式代码示例如下：
+    <meta http-equiv="X-UA-Compatible" content="IE=5" />
+    像是使用了 Windows Internet Explorer 7 的 Quirks 模式，这与 Windows Internet Explorer 5 显示内容的方式很相似。
+
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    无论页面是否包含 <!DOCTYPE> 指令，均使用 Windows Internet Explorer 7 的标准渲染模式。
+
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    开启 IE8 的标准渲染模式，但由于本身 X-UA-Compatible 文件头仅支持 IE8 以上版本，因此等同于冗余代码。
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    Edge 模式通知 Windows Internet Explorer 以最高级别的可用模式显示内容，这实际上破坏了“锁定”模式。
+
