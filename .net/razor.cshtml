@@ -1,0 +1,98 @@
+//razor c# 的语法规则
+//Razor 代码块包含在 @{ ... } 中
+//内联表达式（变量和函数）以 @ 开头
+//代码语句用分号结束
+//变量使用 var 关键字声明
+//字符串用引号括起来
+//C# 代码区分大小写
+//C# 文件的扩展名是 .cshtml
+//加载引入页面@RenderPage('header.cshtml'); renderPage方法
+//Layout Page 布局页 @RenderBody() 嵌入内容页  内容页引入布局页 @{layout="地址链接"}
+//防止文件被泄露 _header.cshtml
+
+//@Href(); 用法
+@{var myStyleSheet = "~/Shared/Site.css";}
+
+<!-- This creates a link to the CSS file. -->
+<link rel="stylesheet" type="text/css" href="@Href(myStyleSheet)" />
+
+<!-- Same as : -->
+<link rel="stylesheet" type="text/css" href="/Shared/Site.css" />
+
+//for 循环
+//如果您使用的是集合或者数组，您会经常用到 for each 循环。
+//集合是一组相似的对象，for each 循环可以遍历集合直到完成。
+<html>
+    <body>
+        @for(var i = 10; i < 21; i++)
+        {<p>Line @i</p>}
+    </body>
+</html>
+
+//foreach循环
+<html>
+    <body>
+    <ul>
+        @foreach (var x in Request.ServerVariables)
+            {<li>@x</li>}
+        </ul>
+    </body>
+</html>
+
+//while 循环
+<html>
+    <body>
+        @{
+            var i = 0;
+            while (i < 5)
+                {
+                i += 1;
+                <p>Line #@i</p>
+                }
+        }
+    </body>
+</html>
+
+//逻辑语句
+@{var price=25;}
+<html>
+    <body>
+        @if (price>=30)
+        {
+        <p>The price is high.</p>
+        }
+        else if (price>20 && price<30)
+        {
+        <p>The price is OK.</p>
+        }
+        else
+        {
+        <p>The price is low.</p>
+        }
+    </body>
+</html>
+@{
+var weekday=DateTime.Now.DayOfWeek;
+var day=weekday.ToString();
+var message="";
+}
+<html>
+    <body>
+        @switch(day)
+        {
+        case "Monday":
+        message="This is the first weekday.";
+        break;
+        case "Thursday":
+        message="Only one day before weekend.";
+        break;
+        case "Friday":
+        message="Tomorrow is weekend!";
+        break;
+        default:
+        message="Today is " + day;
+        break;
+        }
+        <p>@message</p>
+    </body>
+</html>

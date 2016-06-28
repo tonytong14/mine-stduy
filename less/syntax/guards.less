@@ -8,23 +8,23 @@
 }
 
 .menu{
-	//¶¨ÒåÅÐ¶ÏÌõ¼þµÄÖµ
+	//ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
 	@switch:400;
 	.mixins(@switch,800);
 }
 
 
-//Æ¥Åä±í´ïÊ½
+//Æ¥ï¿½ï¿½ï¿½ï¿½Ê½
 .font-size (@size) when(@size =< 12){
 	font-size:@size;
 }
 
-@media: mobile;
+/*@media:mobile;
 
 .mixin (@a) when (@media = mobile) { }
 .mixin (@a) when (@media = desktop) { }
 
-//not·ñ¶¨Ìõ¼þ,È¡·´
+//notï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,È¡ï¿½ï¿½
 .not (@a) when not (isnumber(@a)){
 	position:absolute;
 }
@@ -32,16 +32,16 @@
 	.not(ting);
 }
 
-//and ²¢ÇÒÌõ¼þ
+//and ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 .and (@a) when (isnumber(@a)) and (@a > 10) {
 	left:@a px;
 }
 .menu{
 	.and(20);
-}
+}*/
 
-//,·Ö¸î±íÊ¾£¬»ò¡£ÈÎÒâÒ»¸öÌõ¼þÎªÕæÖ´ÐÐ
+//,ï¿½Ö¸ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Ö´ï¿½ï¿½
 
 .comma (@a) when (@a > 10),(@a < 5){
 	font-size:@a;

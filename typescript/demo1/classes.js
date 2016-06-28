@@ -18,7 +18,7 @@ var Person = (function () {
         return this.name + '------' + this.age;
     };
     return Person;
-}());
+})();
 var ren = new Person('meiss', 19);
 alert(ren.print());
 //类的继承
@@ -33,7 +33,7 @@ var Star = (function () {
         console.log(this.name + '--' + this.age + ming);
     };
     return Star;
-}());
+})();
 var SuperStar = (function (_super) {
     __extends(SuperStar, _super);
     function SuperStar(money) {
@@ -44,7 +44,7 @@ var SuperStar = (function (_super) {
         console.log(this.name + '---' + this.age + '--' + this.money);
     };
     return SuperStar;
-}(Star));
+})(Star);
 var rain = new SuperStar(250);
 rain.song('我不知道');
 rain.say();
@@ -57,7 +57,7 @@ var People = (function () {
         return this.name + '----' + this.age;
     };
     return People;
-}());
+})();
 var Man = (function (_super) {
     __extends(Man, _super);
     function Man(s) {
@@ -68,7 +68,7 @@ var Man = (function (_super) {
         return this.name + '---' + this.school;
     };
     return Man;
-}(People));
+})(People);
 var m = new Man('yp');
 m.name = 'wyf';
 m.school = 'erxuexiao';
