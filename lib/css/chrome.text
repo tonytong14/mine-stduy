@@ -2,3 +2,22 @@
     <meta name="theme-color" content="#2932e1">
 2：禁止网页转码
     <meta http-equiv="Cache-Control" content="no-siteapp" />
+3：设置滚动条样式
+         1.  ::-webkit-scrollbar			     滚动条整体部分，一般可以设置宽度
+
+         2.  ::-webkit-scrollbar-button		两端的按钮
+
+
+         3.  ::-webkit-scrollbar-track		外层轨道（track本身就是轨道的意思）
+
+
+         4.  ::-webkit-scrollbar-track-piece	内层滚动槽
+
+
+         5.  ::-webkit-scrollbar-thumb		滑块
+
+
+         6.  ::-webkit-scrollbar-corner		边角
+
+
+         7.  ::-webkit-resizer				右下角拖动块的样式（个人觉得这个不应该是这边相关的样式）
