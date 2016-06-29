@@ -10,3 +10,4 @@ http.createServer(function(request,response){
 }).listen(5858);
 
 //console.log('Server running at http://127.0.0.1:8888/');
+//npm install supervisor -g 全局安装监听模块方便修改
