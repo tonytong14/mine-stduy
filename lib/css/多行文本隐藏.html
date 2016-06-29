@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /*--webkit 内核实现多行文本操作模式--*/
+        .chrome{
+            width:200px;
+            height:45px;
+            overflow : hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;   /*--必须结合的属性,将对象作为弹性伸缩盒子模型显示--*/
+            -webkit-line-clamp: 2;  /*--用来限制在一个块元素显示的文本的行数--*/
+            -webkit-box-orient: vertical;   /*--必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。--*/
+            font-size:14px;
+        }
+
+        /*--使用伪元素：：after 模拟省略号--*/
+        .ie{
+            width:200px;
+            height:45px;
+            font-size:14px;
+        }
+
+        .ie p{
+            width:100%;
+            height:45px;
+            line-height: 15px;
+            overflow:hidden;
+            position: relative;
+        }
+        .ie p::after {
+            content:"...";
+            font-weight:bold;
+            position:absolute;
+            bottom:0;
+            right:0;
+            background:#FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="chrome">
+        <p>多行文本隐藏隐藏因撒错阿偶骄傲比你姐是谁水水水水撒娇啊发发北京爱安静安静分别骄傲比北京发布姐姐姐姐姐姐姐姐叫爸爸不不不不不不大把的哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+    </div>
+
+    <div class="ie">
+        <p>多行文本隐藏隐藏因撒错阿偶骄傲比你姐是谁水水水水撒娇啊发发北京爱安静安静分别骄傲比北京发布姐姐姐姐姐姐姐姐叫爸爸不不不不不不大把的哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+    </div>
+    <script>
+        //使用插件js按照ie模拟思路实现
+        //下载及文档地址：
+       /* // https://github.com/josephschmitt/Clamp.js
+        使用也非常简单：
+
+        var module = document.getElementById("clamp-this-module");
+        $clamp(module, {clamp: 3});*/
+
+       /* 2.jQuery插件-jQuery.dotdotdot
+
+        这个使用起来也很方便：
+
+        $(document).ready(function() {
+            $("#wrapper").dotdotdot({
+                //	configuration goes here
+            });
+        });
+        下载及详细文档地址：https://github.com/BeSite/jQuery.dotdotdot或http://dotdotdot.frebsite.nl/*/
+    </script>
+</body>
+</html>
