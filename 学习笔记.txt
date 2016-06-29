@@ -26,3 +26,4 @@ https://appharbor.com/user
 
 //nodejs 中文API文档地址
 http://nodeapi.ucdok.com/#/api/
+http://www.lvtao.net/content/book/node.js.htm#2.5.2
