@@ -23,3 +23,6 @@ http://www.css88.com/archives/4821
 
 //服务器托管网站
 https://appharbor.com/user
+
+//nodejs 中文API文档地址
+http://nodeapi.ucdok.com/#/api/
