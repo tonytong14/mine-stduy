@@ -17,7 +17,16 @@
          5.  ::-webkit-scrollbar-thumb		滑块
 
 
+
          6.  ::-webkit-scrollbar-corner		边角
 
-
          7.  ::-webkit-resizer				右下角拖动块的样式（个人觉得这个不应该是这边相关的样式）
+         //ie
+         scrollbar-face-color 滚动条凸出部分的颜色
+         scrollbar-shadow-color 立体滚动条阴影的颜色
+         scrollbar-highlight-color 滚动条空白部分的颜色
+         scrollbar-3dlight-color 滚动条亮边的颜色
+         scrollbar-darkshadow-color 滚动条强阴影的颜色
+         scrollbar-track-color 滚动条的背景颜色
+         scrollbar-arrow-color 上下按钮上三角箭头的颜色
+         scrollbar-base-color  滚动条的基本颜色
