@@ -45,11 +45,32 @@
         var leg=require('events').EventEmitter.listenerCount(eventemitter,'eventName');
         console.log(leg);
 
-        //removeAllListeners('事件名'); 移除指定事件上的所有监听器
+       /* //removeAllListeners('事件名'); 移除指定事件上的所有监听器
         eventemitter.removeAllListeners('eventName');
-        eventemitter.emit('eventName');
+        eventemitter.emit('eventName');*/
 
         //事件
-        /*eventemitter.newListener('eventName',function(){
-            console.log('新加了一个监听器');
-        });*/
+        //newListener 该事件在添加新监听器时被触发。参数 事件名 处理函数
+        eventemitter.on('newListener',function(event,listener){
+            if(event === 'eventName'){
+                console.log(listener);
+                console.log('newListener 新增事件监听');
+            }
+        });
+        eventemitter.on('eventName',function(){
+            console.log('这是一个新的事件监听器');
+        });
+        eventemitter.emit('eventName');
+
+        //removeListener 从指定监听器数组中删除一个监听器。需要注意的是，此操作将会改变处于被删监听器之后的那些监听器的索引。参数 事件名 处理函数
+        eventemitter.on('removeListener',function(event,listener){
+            if(event === 'eventName'){
+                console.log('移除事件的处理函数');
+            }
+        });
+        function  rm(){
+            console.log('移除事件测试');
+        }
+        eventemitter.on('eventName',rm);
+        eventemitter.removeListener('eventName',rm);
+        eventemitter.emit('eventName');
