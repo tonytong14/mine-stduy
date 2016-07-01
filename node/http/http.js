@@ -1,4 +1,11 @@
 //引入http模块
+    /*
+        'http'模块提供两种使用方式：
+
+        作为服务端使用时，创建一个HTTP服务器，监听HTTP客户端请求并返回响应。
+
+        作为客户端使用时，发起一个HTTP客户端请求，获取服务端响应。
+    */
 var http=require('http');
 //创建服务器
 http.createServer(function(request,response){
