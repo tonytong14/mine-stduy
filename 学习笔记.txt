@@ -30,3 +30,9 @@ http://www.lvtao.net/content/book/node.js.htm#2.5.2
 
 //外部字体
 http://www.phpvar.com/archives/2663.html
+
+//vueJs   API
+http://cn.vuejs.org/api/
+
+//vueJs 中文官网
+http://cn.vuejs.org/guide/
