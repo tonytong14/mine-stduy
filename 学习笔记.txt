@@ -39,3 +39,5 @@ http://cn.vuejs.org/guide/
 
 //vueJs-router 文档
 http://router.vuejs.org/zh-cn/index.html
+//vuex 文档
+http://vuex.vuejs.org/zh-cn/index.html
