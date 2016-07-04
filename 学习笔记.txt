@@ -36,3 +36,6 @@ http://cn.vuejs.org/api/
 
 //vueJs 中文官网
 http://cn.vuejs.org/guide/
+
+//vueJs-router 文档
+http://router.vuejs.org/zh-cn/index.html
