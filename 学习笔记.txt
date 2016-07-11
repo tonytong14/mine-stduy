@@ -41,3 +41,6 @@ http://cn.vuejs.org/guide/
 http://router.vuejs.org/zh-cn/index.html
 //vuex 文档
 http://vuex.vuejs.org/zh-cn/index.html
+
+//bootstrap-datepicker文档地址
+http://bootstrap-datepicker.readthedocs.io/en/latest/options.html#autoclose
