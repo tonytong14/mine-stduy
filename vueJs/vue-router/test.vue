@@ -11,9 +11,9 @@
     }
 </style>
 <script>
-    import HeaderComponent from './components/header.vue'
-    import OtherComponent from './components/other.vue'
-    export default{
+    //import HeaderComponent from './components/header.vue'
+    //import OtherComponent from './components/other.vue'
+  /*  export default{
         data(){
             return{
                 msg:'hello vue'
@@ -23,5 +23,5 @@
             'other-component':OtherComponent,
             HeaderComponent,
         }
-    }
+    }*/
 </script>
