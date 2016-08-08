@@ -47,3 +47,6 @@ http://bootstrap-datepicker.readthedocs.io/en/latest/options.html#autoclose
 
 //前端工程化
 http://chenzhutian.org/blog/2016/%E6%B5%85%E8%B0%88VisMooc%E7%9A%84%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/
+
+//es2015
+http://gank.io/post/564151c1f1df1210001c9161
