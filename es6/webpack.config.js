@@ -3,10 +3,10 @@ var path=require('path');
 
 module.exports={
     entry:{
-      app:'app.js'
+      app:'./app/js/variable.js'
     },
     output:{
-        path:path.join(__dirname,bundle,js),
+        path:path.join(__dirname,'bundle','js'),
         filename:'[name].js'
     }
 }
